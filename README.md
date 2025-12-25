@@ -1,21 +1,57 @@
-# ShopSwift – MERN E-Commerce App
+#  ShopSwift – MERN E-commerce Application
 
-A full-stack MERN e-commerce application built with React, TailwindCSS, Node.js, Express, and MongoDB.
+ShopSwift is a full-stack e-commerce web application built using the MERN stack.  
+It supports user authentication, cart management, and secure payment integration using Razorpay.
 
-## Features
-- User authentication (JWT)
-- Product listing
-- Responsive UI with TailwindCSS
-- Frontend–Backend API integration
-- MongoDB Atlas database
+---
 
-## Tech Stack
-**Frontend:** React, TailwindCSS, Axios  
-**Backend:** Node.js, Express.js, MongoDB  
-**Tools:** Git, GitHub, VS Code  
+##  Features
+
+- User Registration & Login (JWT Authentication)
+- Product Listing & Product Details
+- Add to Cart / Remove from Cart
+- Cart Total Calculation
+- Protected Checkout
+- Razorpay Payment Integration (Test Mode)
+- Auto redirect after Login, Register & Payment
+- Secure handling of environment variables
+
+---
+
+##  Tech Stack
+
+**Frontend**
+- React
+- React Router
+- Context API
+- Axios
+
+**Backend**
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+
+**Payment**
+- Razorpay (Test Mode)
+
+---
+
+##  Environment Variables
+
+Create a `.env` file in the backend folder:
+
+```env
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+RAZORPAY_KEY_ID=your_razorpay_key
+RAZORPAY_KEY_SECRET=your_razorpay_secret
+PORT=5000
+
 
 ## Setup Instructions
-```bash
+
 # Backend
 cd backend
 npm install
