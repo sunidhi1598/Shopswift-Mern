@@ -9,24 +9,29 @@ import {
 import protect from "../middleware/authMiddleware.js";
 import admin from "../middleware/adminMiddleware.js";
 
-
 const router = express.Router();
 
-// Public routes
+// =======================
+// PUBLIC ROUTES
+// =======================
+
+// Get all products
 router.get("/", getProducts);
+
+// Get single product by ID
 router.get("/:id", getProductById);
 
-// Protected route (admin later)
-router.post("/", protect, createProduct);
+// =======================
+// ADMIN PROTECTED ROUTES
+// =======================
 
-// Public
-router.get("/", getProducts);
-router.get("/:id", getProductById);
-
-// Admin protected
+// Create product
 router.post("/", protect, admin, createProduct);
-router.put("/:id", protect, admin, updateProduct);
-router.delete("/:id", protect, admin, deleteProduct);
 
+// Update product
+router.put("/:id", protect, admin, updateProduct);
+
+// Delete product
+router.delete("/:id", protect, admin, deleteProduct);
 
 export default router;
