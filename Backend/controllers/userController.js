@@ -1,4 +1,4 @@
-import User from "../models/User.js";
+import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 
 // 🔑 Generate JWT
@@ -58,3 +58,4 @@ export const loginUser = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
