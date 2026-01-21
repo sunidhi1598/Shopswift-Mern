@@ -5,6 +5,16 @@ It supports user authentication, cart management, and secure payment integration
 
 ---
 
+##  Live Demo
+
+- **Frontend (Netlify):**  
+  https://shopswiftmernn.netlify.app
+
+- **Backend API (Render):**  
+  https://shopswift1.onrender.com
+
+---
+
 ##  Features
 
 - User Registration & Login (JWT Authentication)
@@ -60,4 +70,5 @@ npm run dev
 # Frontend
 cd frontend
 npm install
+
 npm start
